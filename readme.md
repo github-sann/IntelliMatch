@@ -45,7 +45,6 @@ IntelliMatch is an AI-powered web application designed to match user-provided an
 ## Contributors
 
 - Savitha
--
 
 ## Acknowledgments
 
