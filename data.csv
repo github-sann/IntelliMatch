@@ -1,0 +1,7 @@
+Question,Answer
+Explain the concept of recursion.,Recursion is a programming technique where a function calls itself to solve a smaller instance of the same problem. It often involves a base case to terminate the recursion and a recursive case to break down the problem.
+What is the time complexity of a binary search algorithm?,"The time complexity of binary search is O(log n), where n is the number of elements in the sorted array. It efficiently halves the search space in each iteration."
+What is an array?,"An array is a sequential collection of elements of the same type, stored in contiguous memory locations, and accessed using an index."
+What is a linked list?,"A linked list is a linear collection of elements called nodes, where each node contains data and a reference (or pointer) to the next node in the sequence."
+What is the main difference between a stack and a queue?,"The main difference is in their order of operations. A stack follows the Last-In-First-Out (LIFO) principle, while a queue follows the First-In-First-Out (FIFO) principle."
+

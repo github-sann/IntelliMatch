@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to your custom CSS file -->
+    <style>
+ 
+        /* Custom styles for navbar */
+      /* Custom styles for navbar */
+        .navbar-custom {
+            background: linear-gradient(45deg, #ff0055, #17c7ff, #ff9f00);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for depth */
+        }
+
+
+        .navbar-custom .navbar-brand {
+            color: #FFFFFF; /* Change text color */
+        }
+
+        .navbar-custom .navbar-nav .nav-link {
+            color: #FFFFFF; /* Change text color */
+        }
+
+        .navbar-custom .navbar-nav .nav-link:hover {
+            color: #F8F9FA; /* Change text color on hover */
+        }
+        .quiz-container {
+            height: 50%;
+    width: 100%;
+    max-width: 600px; /* Limiting maximum width */
+    margin: 0 auto; /* Centering horizontally */
+    padding: 20px;
+    background: linear-gradient(45deg, #e0e0e0, #f0f0f0); /* 3D light color background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Drop shadow */
+}
+
+.quiz-container h2, .quiz-container h3 {
+    text-align: center; /* Center-align headings */
+}
+
+.chat-box {
+    display: flex;
+    align-items: center;
+}
+
+.chat-box input[type="text"] {
+    flex: 1;
+    padding: 50px;
+    border: none;
+    border-radius: 50px;
+    background-color: #e4e6eb; /* Input background color */
+    margin-right: 10px;
+}
+.chat-box button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #4CAF50, #65c45e); /* 3D color background */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.chat-box button:hover {
+    background-color: #45a049; /* Darker background color on hover */
+}
+.quiz-container {
+    width: 100%;
+    max-width: 600px; /* Limiting maximum width */
+    margin: 0 auto; /* Centering horizontally */
+    padding: 20px;
+    background-color: #f3f4f6; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Drop shadow */
+}
+
+.quiz-container h2, .quiz-container h3 {
+    text-align: center; /* Center-align headings */
+}
+
+.chat-box {
+    display: flex;
+    align-items: center;
+}
+
+.chat-box input[type="text"] {
+    flex: 1;
+    padding: 15px; /* Increase padding */
+    border: none;
+    border-radius: 20px;
+    background-color: #e4e6eb; /* Input background color */
+    margin-right: 10px;
+    width: 100%; /* Full width */
+}
+
+.chat-box button {
+    padding: 15px 30px; /* Increase padding */
+    border: none;
+    border-radius: 20px;
+    background-color: #4CAF50; /* Button background color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 100%; /* Full height */
+}
+
+.chat-box button:hover {
+    background-color: #45a049; /* Darker background color on hover */
+}
+
+
+.quiz-container {
+    margin-top: 90px;
+/* Set height */
+    padding: 20px;
+    background-color: #fff; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow */
+    overflow: hidden; /* Hide overflow */
+}
+
+.quiz-container h2, .quiz-container h3 {
+    text-align: center; /* Center-align headings */
+}
+
+.chat-box {
+    display: flex;
+    align-items: center;
+    margin-top: auto; /* Push chat box to the bottom */
+}
+
+.chat-box input[type="text"] {
+    flex: 1;
+    padding: 12px 15px; /* Adjust padding */
+    border: 2px solid #e4e6eb; /* Add border */
+    border-radius: 30px; /* Rounded corners */
+    background-color: #f8f9fa; /* Input background color similar to ChatGPT */
+    margin-right: 10px;
+    font-size: 16px; /* Font size */
+    outline: none; /* Remove outline */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.chat-box input[type="text"]:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+}
+
+.chat-box button {
+    padding: 12px 20px; /* Adjust padding */
+    border: none;
+    border-radius: 30px; /* Rounded corners */
+    background-color: #4CAF50; /* Button background color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and transform */
+    font-size: 16px; /* Font size */
+    outline: none; /* Remove outline */
+}
+
+.chat-box button:hover {
+    background-color: #45a049; /* Darker background color on hover */
+    transform: scale(1.05); /* Scale button slightly on hover */
+}
+
+.chat-box button:active {
+    transform: scale(0.95); /* Shrink button slightly on click */
+}
+
+.chat-box button:hover {
+    background-color: #b0467e; /* Darker background color on hover */
+}
+.question-container {
+    background-color: #54d47f; /* Background color */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow */
+}
+.question-container1 {
+    background-color: #d13d3d; /* Background color */
+    padding: 20px;
+    color: #e0e0e0;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow */
+}
+.question-text {
+    font-size: 18px;
+    color: #333; /* Text color */
+    margin-bottom: 20px;
+}
+
+body {
+    background: linear-gradient(45deg, #ff0055, #17c7ff, #ff9f00);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #c874ab;
+    background-attachment: fixed; /* Ensures the gradient covers the entire screen */
+}
+
+
+
+    </style>
+   
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand" href="#">Intelli Match</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    <div class="quiz-container">
+        <h1> Result</h1>
+        <br><br><br>
+        <div class="question-container">
+            <p>Correct Answers: {{ correct_answers }}</p>
+        </div>
+        <br><br>
+        <div class="question-container1">
+            <p>Incorrect Answers: {{ incorrect_answers }}</p>
+        </div>
+    </div>
+
+</body>
